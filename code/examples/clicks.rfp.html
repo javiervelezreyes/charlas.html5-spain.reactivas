@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contador de Clicks</title>
+		<script src="../lib/rfp.js"></script>
+	</head>
+	<body>
+		<button id="up" class="btn">Up</button>
+		<button id="down" class="btn">Down</button>
+		<span id="display"></span>
+
+		<script>
+
+			var source = rfp.fromTargetAll('.btn', 'click');
+			var stream = rfp.Stream (source)
+				.map  (function (e)    { return e.currentTarget.id === 'up' ? 1 : -1 })
+				.scan (function (a, e) { return a + e; }, 0)
+				.end ();
+			stream.listen (function (n) {
+				document.querySelector('#display').innerHTML = n;
+			});
+
+		</script>
+	</body>
+</html>
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Suma de Cuadrados Pares</title>
+	</head>
+	<body>
+		<div id="display"></div>
+
+		<script>
+
+			var idx = 0;
+			var display = document.querySelector('#display');
+			var sqr = function (n) {
+			    var sqrn = n * n;
+			    if (sqrn % 2 === 0) display.innerHTML += '<br>' + sqrn;
+			    idx++;
+			    setTimeout(function () { sqr(n+1); }, 1000);
+			};
+			sqr(0);
+
+
+		</script>
+	</body>
+</html>
+

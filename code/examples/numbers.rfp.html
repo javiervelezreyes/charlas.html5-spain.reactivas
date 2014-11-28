@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Suma de Cuadrados Pares</title>
+		<script src="../lib/rfp.js"></script>
+	</head>
+	<body>
+		<div id="display"></div>
+
+		<script>
+
+			var data = rfp.serie (function (x) { return x + 1; }, 0);
+			var source = rfp.fromSerie(data);
+			var stream = rfp.Stream (source)
+			    .map    (function (e)    { return e * e;     })
+			    .filter (function (e)    { return e % 2 === 0})
+			    .scan   (function (a, e) { return a + e;     }, 0)
+			    .end ();
+			stream.listen (function (n) {
+				document.querySelector('#display').innerHTML += '<br>' + n;
+			});
+
+		</script>
+	</body>
+</html>
+
