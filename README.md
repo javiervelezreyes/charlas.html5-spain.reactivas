@@ -36,7 +36,7 @@ Pero más allá de todo esto, las arquitecturas reactivas se han convertido en u
 
 Licenciado en informática por la Universidad Politécnica de Madrid (UPM) desde el año 2001 y doctor en informática por la Universidad Nacional de Educación a Distancia (UNED) desde el año 2009, Javier es investigador y está especializado en el diseño y análisis de la colaboración. Esta labor la compagina con actividades de evangelización, consultoría, mentoring y formación especializada para empresas dentro del sector IT. Inquieto, ávido lector y seguidor cercano de las innovaciones en tecnología. 
 
-###Tags
+### Tags
 
 - Desarrollado 
 - Front/Back 
@@ -57,3 +57,9 @@ Licenciado en informática por la Universidad Politécnica de Madrid (UPM) des
 - Slideshare: jvelez77
 - Github: javiervelezreyes 
 - Youtube: youtube.com/user/javiervelezreyes
+
+### Referencias
+
+- Video: https://goo.gl/xHrzSK
+- Slideshare: http://goo.gl/Pjb5vr
+- Github: https://goo.gl/Eu7QEx
